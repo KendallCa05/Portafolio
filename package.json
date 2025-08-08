@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://KendallCa05.github.io/portfolio",
+  "homepage": "https://KendallCa05.github.io/Portafolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

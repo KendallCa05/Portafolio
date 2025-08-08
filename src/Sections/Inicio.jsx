@@ -31,7 +31,7 @@ const Inicio = () => (
           Desarrollador de Software Backend, enfocado en la resolución de problemas y la adaptación a nuevas tecnologías...
         </p>
         <motion.a
-          href="/CV.pdf"
+          href="/Portafolio/CV.pdf"
           download
           className="cv-button"
           whileHover={{ scale: 1.05 }}
