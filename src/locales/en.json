@@ -62,5 +62,13 @@
       "whatsapp": "WhatsApp",
       "linkedin": "LinkedIn"
     }
+  },
+  "sidebar": {
+    "inicio": "Home",
+    "sobreMi": "About Me",
+    "herramientas": "Tools",
+    "proyectos": "Projects",
+    "contacto": "Contact",
+    "cambiarIdioma": "Change Language"
   }
 }
