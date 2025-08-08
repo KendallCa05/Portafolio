@@ -1,0 +1,66 @@
+{
+  "inicio": {
+    "holaNombre": "Hello, my name is Kendall",
+    "descripcion": "Backend Software Developer, focused on problem-solving and adapting to new technologies...",
+    "cvButton": "Download CV",
+    "altLogo": "Kiwi logo"
+  },
+
+  "sobreMi": {
+    "titulo": "About Me",
+    "descripcion": "I am Kendall Cordero, a professional passionate about Software development, with technical training in Electronics and Telecommunications. I am passionate about learning and facing new challenges. I have experience repairing electronic equipment, which has taught me to be patient and solve problems creatively. I easily adapt to new technologies and situations, and I am always looking to continue growing both professionally and personally."
+  },
+
+  "herramientas": {
+    "titulo": "Tools",
+    "tools": [
+      "Git",
+      "GitHub",
+      "React",
+      "CSS3",
+      "JavaScript",
+      "Java",
+      "C++",
+      "Python",
+      "SQL Server"
+    ]
+  },
+  "proyectos": {
+    "titulo": "Featured Projects",
+    "proyectos": [
+      {
+        "id": "tower",
+        "titulo": "Tower Defense",
+        "descripcion": "Tower defense-style game made with Godot."
+      },
+      {
+        "id": "pokemon",
+        "titulo": "Pokemon Duel",
+        "descripcion": "Turn-based Pokémon game."
+      },
+      {
+        "id": "multas",
+        "titulo": "Fine Management System",
+        "descripcion": "App for managing fines using AI."
+      },
+      {
+        "id": "beatz",
+        "titulo": "Beatz",
+        "descripcion": "Graphical interface for a music app."
+      }
+    ]
+  },
+  
+  "contacto": {
+    "titulo": "Contact",
+    "subtitulo": "Let's work together!",
+    "placeholderEmail": "Email",
+    "placeholderMensaje": "Message",
+    "boton": "SEND",
+    "redes": {
+      "github": "GitHub",
+      "whatsapp": "WhatsApp",
+      "linkedin": "LinkedIn"
+    }
+  }
+}

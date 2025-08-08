@@ -1,9 +1,11 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import emailjs from "emailjs-com";
 import "../styles/portafolio.css";
 
 const Contacto = () => {
+  const { t } = useTranslation();
   const form = useRef();
 
   const enviarCorreo = (e) => {
@@ -18,11 +20,11 @@ const Contacto = () => {
       )
       .then(
         () => {
-          alert("¡Correo enviado con éxito!");
+          alert(t("contacto.exito"));
           form.current.reset();
         },
         (error) => {
-          alert("Error al enviar el correo: " + error.text);
+          alert(t("contacto.error") + ": " + error.text);
         }
       );
   };
@@ -35,7 +37,7 @@ const Contacto = () => {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        Contacto
+        {t("contacto.titulo")}
       </motion.h2>
 
       <motion.p
@@ -44,7 +46,7 @@ const Contacto = () => {
         transition={{ duration: 0.6, delay: 0.2 }}
         viewport={{ once: true }}
       >
-        ¡Trabajemos juntos!
+        {t("contacto.subtitulo")}
       </motion.p>
 
       <motion.form
@@ -56,8 +58,18 @@ const Contacto = () => {
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        <input type="email" name="user_email" placeholder="Email" required />
-        <textarea name="message" placeholder="Mensaje" rows="5" required></textarea>
+        <input
+          type="email"
+          name="user_email"
+          placeholder={t("email")}
+          required
+        />
+        <textarea
+          name="message"
+          
+          rows="5"
+          required
+        ></textarea>
         <motion.button
           type="submit"
           className="boton-enviar"
@@ -65,7 +77,7 @@ const Contacto = () => {
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
-          ENVIAR
+          {t("contacto.boton")}
         </motion.button>
       </motion.form>
 

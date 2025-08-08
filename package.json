@@ -16,8 +16,10 @@
     "@fortawesome/fontawesome-free": "^7.0.0",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^12.23.12",
+    "i18next": "^25.3.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-i18next": "^15.6.1",
     "swiper": "^9.4.1"
   },
   "devDependencies": {
