@@ -24,13 +24,13 @@ const Sidebar = () => {
             </a>
           </li>
           <li>
-            <a href="#herramientas" data-tooltip={t("sidebar.herramientas")}>
-              <i className="fa-solid fa-cogs"></i>
+            <a href="#proyectos" data-tooltip={t("sidebar.proyectos")}>
+              <i className="fa-solid fa-diagram-project"></i>
             </a>
           </li>
           <li>
-            <a href="#proyectos" data-tooltip={t("sidebar.proyectos")}>
-              <i className="fa-solid fa-diagram-project"></i>
+            <a href="#herramientas" data-tooltip={t("sidebar.herramientas")}>
+              <i className="fa-solid fa-cogs"></i>
             </a>
           </li>
           <li>

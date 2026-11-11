@@ -1,6 +1,8 @@
 {
   "inicio": {
-    "holaNombre": "Hello, my name is Kendall",
+    "saludo": "Hello, I'm",
+    "nombre": "Kendall",
+    "apellido": "Cordero",
     "descripcion": "Software Developer, focused on problem-solving and adapting to new technologies...",
     "cvButton": "Download CV",
     "altLogo": "Kiwi logo"
@@ -8,11 +10,13 @@
 
   "sobreMi": {
     "titulo": "About Me",
-    "descripcion": "I am Kendall Cordero, a professional passionate about Software development, with technical training in Electronics and Telecommunications. I am passionate about learning and facing new challenges. I have experience repairing electronic equipment, which has taught me to be patient and solve problems creatively. I easily adapt to new technologies and situations, and I am always looking to continue growing both professionally and personally."
+    "subtitulo": "A little about my experience and how I work.",
+    "descripcion": "I am a Full Stack developer passionate about creating digital solutions. I enjoy turning ideas into real applications, building intuitive experiences, and developing robust systems.\n\nI enjoy taking on new challenges, exploring technologies, and finding more efficient ways to solve problems. I am always learning and looking for opportunities to create things that bring value."
   },
 
   "herramientas": {
     "titulo": "Tools",
+    "subtitulo": "Technologies I use to build useful solutions.",
     "tools": [
       "Git",
       "GitHub",
@@ -20,13 +24,27 @@
       "CSS3",
       "JavaScript",
       "Java",
-      "C++",
-      "Python",
+      "TypeScript",
+      "Node.js",
       "SQL Server"
     ]
   },
   "proyectos": {
     "titulo": "Featured Projects",
+    "subtitulo": "A selection of projects I have worked on.",
+    "anterior": "Previous project",
+    "siguiente": "Next project",
+    "verProyecto": "Explore project",
+    "categorias": {
+      "videojuego": "Video game",
+      "juegoTurnos": "Turn-based game",
+      "gestionIA": "Management · AI",
+      "interfazMusical": "Music interface",
+      "proyecto": "Project"
+    },
+    "de": "of",
+    "seleccionarProyecto": "Select a project",
+    "irA": "Go to project",
     "proyectos": [
       {
         "id": "tower",
@@ -53,9 +71,9 @@
   
   "contacto": {
     "titulo": "Contact",
-    "subtitulo": "Let's work together!",
-    "placeholderEmail": "Email",
-    "placeholderMensaje": "Message",
+    "subtitulo": "Have an idea or a project? Send me a message.",
+    "placeholderEmail": "Your email address",
+    "placeholderMensaje": "Tell me briefly how I can help...",
     "boton": "SEND",
     "redes": {
       "github": "GitHub",

@@ -61,15 +61,17 @@ const Contacto = () => {
         <input
           type="email"
           name="user_email"
-          placeholder={t("email")}
+          placeholder={t("contacto.placeholderEmail")}
+          aria-label={t("contacto.placeholderEmail")}
           required
         />
         <textarea
           name="message"
-          
-          rows="5"
+          rows={5}
+          placeholder={t("contacto.placeholderMensaje")}
+          aria-label={t("contacto.placeholderMensaje")}
           required
-        ></textarea>
+        />
         <motion.button
           type="submit"
           className="boton-enviar"

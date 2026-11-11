@@ -1,6 +1,8 @@
 {
   "inicio": {
-    "holaNombre": "Hola, mi nombre es Kendall",
+    "saludo": "Hola, soy",
+    "nombre": "Kendall",
+    "apellido": "Cordero",
     "descripcion": "Desarrollador de Software, enfocado en la resolución de problemas y la adaptación a nuevas tecnologías...",
     "cvButton": "Descargar CV",
     "altLogo": "Logo de kiwi"
@@ -8,11 +10,13 @@
 
   "sobreMi": {
     "titulo": "Sobre Mí",
-    "descripcion": "Soy Kendall Cordero, un profesional apasionado por el desarrollo de Software, con formación técnica en Electrónica y Telecomunicaciones. Me apasiona aprender y enfrentar nuevos retos. Tengo experiencia reparando equipos electrónicos, lo que me ha enseñado a ser paciente y resolver problemas con creatividad. Me adapto fácilmente a nuevas tecnologías y situaciones, y siempre busco seguir creciendo tanto profesional como personalmente."
+    "subtitulo": "Un poco sobre mi experiencia y forma de trabajar.",
+    "descripcion": "Soy desarrollador Full Stack apasionado por crear soluciones digitales. Me gusta transformar ideas en aplicaciones reales, construir experiencias intuitivas y desarrollar sistemas sólidos.\n\nDisfruto enfrentar nuevos retos, explorar tecnologías y encontrar formas más eficientes de resolver problemas. Siempre estoy aprendiendo y buscando oportunidades para crear cosas que aporten valor."
   },
 
    "herramientas": {
     "titulo": "Herramientas",
+    "subtitulo": "Tecnologías que utilizo para construir soluciones.",
     "tools": [
       "Git",
       "GitHub",
@@ -20,13 +24,27 @@
       "CSS3",
       "JavaScript",
       "Java",
-      "C++",
-      "Python",
+      "TypeScript",
+      "Node.js",
       "SQL Server"
     ]
   },
   "proyectos": {
     "titulo": "Proyectos Destacados",
+    "subtitulo": "Una selección de proyectos en los que he trabajado.",
+    "anterior": "Proyecto anterior",
+    "siguiente": "Proyecto siguiente",
+    "verProyecto": "Explorar proyecto",
+    "categorias": {
+      "videojuego": "Videojuego",
+      "juegoTurnos": "Juego por turnos",
+      "gestionIA": "Gestión · IA",
+      "interfazMusical": "Interfaz musical",
+      "proyecto": "Proyecto"
+    },
+    "de": "de",
+    "seleccionarProyecto": "Seleccionar proyecto",
+    "irA": "Ir al proyecto",
     "proyectos": [
       {
         "id": "tower",
@@ -52,9 +70,9 @@
   },
   "contacto": {
     "titulo": "Contacto",
-    "subtitulo": "¡Trabajemos juntos!",
-    "placeholderEmail": "Email",
-    "placeholderMensaje": "Mensaje",
+    "subtitulo": "¿Tienes una idea o propuesta? Escríbeme y conversemos.",
+    "placeholderEmail": "Tu correo electrónico",
+    "placeholderMensaje": "Cuéntame brevemente en qué te puedo ayudar...",
     "boton": "ENVIAR",
     "redes": {
       "github": "GitHub",

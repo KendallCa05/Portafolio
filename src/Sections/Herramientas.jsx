@@ -9,8 +9,8 @@ const iconMap = {
   CSS3: ['fab', 'css3-alt'],
   JavaScript: ['fab', 'js'],
   Java: ['fab', 'java'],
-  'C++': ['fas', 'code'],
-  Python: ['fab', 'python'],
+  TypeScript: ['fas', 'code'],
+  'Node.js': ['fab', 'node-js'],
   'SQL Server': ['fas', 'database'],
 };
 
@@ -44,6 +44,7 @@ const Herramientas = () => {
       >
         {t('herramientas.titulo')}
       </motion.h2>
+      <p className="section-intro">{t('herramientas.subtitulo')}</p>
 
       <motion.div
         className="herramientas-grid"

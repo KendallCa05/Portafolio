@@ -13,7 +13,10 @@ const SobreMi = () => {
         transition={{ duration: 0.8, ease: 'easeOut' }}
         viewport={{ once: true, amount: 0.4 }}
       >
-        <h2>{t('sobreMi.titulo')}</h2>
+        <div className="sobre-mi-heading">
+          <h2>{t('sobreMi.titulo')}</h2>
+          <p className="section-intro">{t('sobreMi.subtitulo')}</p>
+        </div>
         <p>{t('sobreMi.descripcion')}</p>
       </motion.div>
     </section>
