@@ -73,6 +73,9 @@
     "subtitulo": "¿Tienes una idea o propuesta? Escríbeme y conversemos.",
     "placeholderEmail": "Tu correo electrónico",
     "placeholderMensaje": "Cuéntame brevemente en qué te puedo ayudar...",
+    "enviando": "Enviando…",
+    "success": "¡Mensaje enviado! Gracias por escribirme.",
+    "error": "No se pudo enviar el mensaje. Inténtalo de nuevo en un momento.",
     "boton": "ENVIAR",
     "redes": {
       "github": "GitHub",

@@ -74,6 +74,9 @@
     "subtitulo": "Have an idea or a project? Send me a message.",
     "placeholderEmail": "Your email address",
     "placeholderMensaje": "Tell me briefly how I can help...",
+    "enviando": "Sending…",
+    "success": "Message sent! Thanks for reaching out.",
+    "error": "Your message could not be sent. Please try again shortly.",
     "boton": "SEND",
     "redes": {
       "github": "GitHub",

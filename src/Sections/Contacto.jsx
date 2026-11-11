@@ -1,32 +1,40 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import emailjs from "emailjs-com";
 import "../styles/portafolio.css";
+
+const WEB3FORMS_ACCESS_KEY = "275d54e4-2f42-402a-b8ce-4cc7ceceea6c";
 
 const Contacto = () => {
   const { t } = useTranslation();
   const form = useRef();
+  const [sending, setSending] = useState(false);
+  const [status, setStatus] = useState("");
 
-  const enviarCorreo = (e) => {
+  const enviarCorreo = async (e) => {
     e.preventDefault();
+    setSending(true);
+    setStatus("");
 
-    emailjs
-      .sendForm(
-        "service_zcsjzpk",
-        "template_9lbkzt5",
-        form.current,
-        "1920pX7NdzFg80Kx7"
-      )
-      .then(
-        () => {
-          alert(t("contacto.exito"));
-          form.current.reset();
-        },
-        (error) => {
-          alert(t("contacto.error") + ": " + error.text);
-        }
-      );
+    try {
+      const formData = new FormData(form.current);
+      formData.append("access_key", WEB3FORMS_ACCESS_KEY);
+      formData.append("subject", "Nuevo mensaje desde el portafolio");
+      formData.append("from_name", "Portafolio de Kendall");
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+      const result = await response.json();
+      if (!response.ok || !result.success) throw new Error(result.message || "Submission failed");
+      setStatus("success");
+      form.current.reset();
+    } catch {
+      setStatus("error");
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -60,7 +68,7 @@ const Contacto = () => {
       >
         <input
           type="email"
-          name="user_email"
+          name="email"
           placeholder={t("contacto.placeholderEmail")}
           aria-label={t("contacto.placeholderEmail")}
           required
@@ -75,12 +83,14 @@ const Contacto = () => {
         <motion.button
           type="submit"
           className="boton-enviar"
+          disabled={sending}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
-          {t("contacto.boton")}
+          {sending ? t("contacto.enviando") : t("contacto.boton")}
         </motion.button>
+        {status && <p className={`formulario-estado ${status}`} role={status === "error" ? "alert" : "status"}>{t(`contacto.${status}`)}</p>}
       </motion.form>
 
       <motion.div
